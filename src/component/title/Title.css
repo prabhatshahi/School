@@ -1,0 +1,17 @@
+/* Styles for the title */
+.title {
+  text-align: center; /* Center-align the text */
+  color: #212121; /* Set the text color */
+  font-size: 15px; /* Set the font size */
+  font-weight: 600; /* Set the font weight */
+  text-transform: uppercase; /* Uppercase the text */
+  margin: 70px 0 30px; /* Set top, right, bottom, and left margins */
+}
+
+/* Styles for the title's h2 element */
+.title h2 {
+  font-size: 32px; /* Set the font size */
+  color: #000f38; /* Set the text color */
+  margin-top: 5px; /* Set the top margin */
+  text-transform: none; /* Reset any text transformation */
+}

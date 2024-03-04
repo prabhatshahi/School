@@ -1,0 +1,63 @@
+/* Program container */
+.programs {
+  margin: 80px auto; /* Center the programs horizontally with some top margin */
+  width: 90%; /* Set the width of the programs container */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Distribute space between program items */
+}
+
+/* Individual program */
+.program {
+  flex-basis: 30%; /* Set the width of each program item */
+  position: relative; /* Positioning context for the caption */
+}
+
+/* Image inside program */
+.program img {
+  width: 100%; /* Make the image fill its container */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  display: block; /* Ensure the image behaves as a block element */
+}
+
+/* Caption overlay */
+.caption {
+  position: absolute; /* Position the caption relative to the program item */
+  top: 0; /* Position from the top */
+  left: 0; /* Position from the left */
+  right: 0; /* Position from the right */
+  bottom: 0; /* Position from the bottom */
+  background-color: rgba(
+    0,
+    15,
+    152,
+    0.3
+  ); /* Semi-transparent background color */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack the caption content vertically */
+  align-items: center; /* Center the caption content horizontally */
+  justify-content: center; /* Center the caption content vertically */
+  padding: 20px; /* Add padding to the caption */
+  color: white;
+  cursor: pointer;
+  opacity: 0;
+  padding-top: 70%;
+  transition: 0.4s;
+}
+
+/* Icon inside caption */
+.caption img {
+  width: 60px; /* Set the width of the icon */
+  margin-bottom: 10px; /* Add spacing below the icon */
+}
+
+/* Text inside caption
+.caption p {
+  color: #fff; /
+  text-align: center;
+} */
+
+.program:hover .caption {
+  opacity: 1;
+  padding-top: 0;
+}

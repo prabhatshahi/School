@@ -1,0 +1,50 @@
+/* About.css */
+
+.about {
+  margin: 100px auto; /* Set top and bottom margin to 100px, and auto for left and right margin */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  width: 50%; /* Set the width of the about container */
+}
+
+.about-left {
+  flex-basis: 40%; /* Set the width of the about-left section */
+  position: relative; /* Positioning context for absolute positioning */
+  margin-right: 20px; /* Add margin to create a gap between about-left and about-right */
+}
+
+.about-right {
+  flex-basis: 56%; /* Set the width of the about-right section */
+}
+
+.about-img {
+  width: 100%; /* Make the image fill its container */
+  border-radius: 10px; /* Add border radius for rounded corners */
+}
+
+.play-img {
+  width: 60px; /* Set the width of the play icon */
+  position: absolute; /* Position the play icon absolutely */
+  top: 50%; /* Position from the top */
+  left: 50%; /* Position from the left */
+  transform: translate(-50%, -50%); /* Center the play icon */
+}
+
+.about h3 {
+  font-weight: 600; /* Set font weight to bold */
+  font-size: 16px; /* Set font size */
+  color: #212ea0; /* Set text color */
+}
+
+.about h2 {
+  font-size: 35px; /* Set font size */
+  color: #000f38; /* Set text color */
+  margin: 10px 0; /* Set margin */
+  max-width: 400px; /* Set maximum width */
+}
+
+.about p {
+  color: #676767; /* Set text color */
+  margin-bottom: 15px; /* Set bottom margin */
+}
