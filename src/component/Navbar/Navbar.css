@@ -15,6 +15,7 @@ nav {
 .logo {
   width: 180px;
 }
+
 nav ul li {
   display: inline-block;
   list-style: none;
@@ -25,4 +26,48 @@ nav ul li {
 .dark-nav {
   background: #212ea0;
   transition: 0.5s;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* Media queries */
+
+@media (max-width: 1000px) {
+  .logo {
+    width: 140px;
+  }
+  nav ul li {
+    margin: 10px 15px;
+  }
+}
+
+@media (max-width: 840px) {
+  nav {
+    padding: 15px 0;
+  }
+  nav ul {
+    position: fixed;
+    top: 0;
+    right: -200px;
+    background: #2102a8;
+    z-index: -1;
+    width: 200px;
+    padding-top: 70px; /* Corrected syntax */
+    transition: 0.5s;
+    bottom: 0;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px 45px;
+  }
+  .menu-icon {
+    display: block;
+    width: 30px;
+    cursor: pointer;
+  }
+  .hide-mobile-menu {
+    right: -200px;
+  }
 }

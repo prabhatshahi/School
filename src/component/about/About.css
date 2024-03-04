@@ -30,6 +30,14 @@
   left: 50%; /* Position from the left */
   transform: translate(-50%, -50%); /* Center the play icon */
 }
+.play-icon {
+  width: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
 
 .about h3 {
   font-weight: 600; /* Set font weight to bold */
@@ -47,4 +55,18 @@
 .about p {
   color: #676767; /* Set text color */
   margin-bottom: 15px; /* Set bottom margin */
+}
+
+@media (max-width: 800px) {
+  .about {
+    flex-direction: column;
+  }
+  .about-left {
+    flex-basis: 100%;
+    margin: 20px;
+    order: 2;
+  }
+  .about-right {
+    flex-basis: 100%;
+  }
 }
